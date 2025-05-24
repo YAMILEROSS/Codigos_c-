@@ -1,18 +1,14 @@
 #include <bits/stdc++.h.>
 using namespace std;
-bool azul()
+void azul()
 {
     int a; cin>>a;
-    for(int i=2;i<=a/2;i++)
-    {
-        if(a%i==0)
-        {
-            cout<<"no";
-            return 1;
-        }
-    }
-    cout<<"si";
-    return 1;
+    int r=a%10;
+    a=a/10;
+    int r1=a%10;
+    a=a/10;
+    int r2=a%10;
+    cout<<r+r1+r2;
 }
   main()
   {
